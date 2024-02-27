@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Translator</title>
+    <style>
+        body {
+            background-color: #f8f9fa; /* Cor de fundo da página */
+            color: #212529; /* Cor do texto */
+        }
+        .container {
+            background-color: #fff; /* Cor de fundo do container */
+            border-radius: 10px; /* Borda arredondada do container */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+            padding: 30px; /* Espaçamento interno */
+        }
+        .btn-success {
+            background-color: #28a745; /* Cor de fundo do botão */
+            border-color: #28a745; /* Cor da borda do botão */
+        }
+        .btn-success:hover {
+            background-color: #218838; /* Cor de fundo do botão ao passar o mouse */
+            border-color: #1e7e34; /* Cor da borda do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Translation Service</h1>
+        <p class="mb-4">Enter the text you wish to translate, choose the language, and click Translate!</p>
+        <div>
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="text" class="form-label">Enter Text:</label>
+                    <textarea name="text" id="text" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="language" class="form-label">Select Language:</label>
+                    <select name="language" id="language" class="form-select">
+                        <option value="en">English</option>
+                        <option value="it">Italian</option>
+                        <option value="ja">Japanese</option>
+                        <option value="ru">Russian</option>
+                        <option value="tr">Turkish</option>
+                        <option value="el">Greek</option>
+                        <option value="fr">French</option>
+                        <option value="hy">Armenian</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success">Translate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
